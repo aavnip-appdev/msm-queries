@@ -64,7 +64,7 @@
 <h2>Filmography</h2>
 
 <table border="1">
-<% @filmography.each do|a_film| %>
+
   <tr>
     <th>ID</th>
     <th>Image</th>
@@ -73,7 +73,7 @@
     <th>Director</th>
     <th></th>
   </tr>   
-  
+<% @filmography.each do|a_film| %>  
   <tr>
     <td>
       <%= a_film.id %>
