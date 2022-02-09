@@ -3,9 +3,17 @@
 <table border="1">
 <% @list_of_directors.each do|a_thing| %>
   <tr>
+    <th>ID</th>
+    <th>Image</th>
+    <th>Name</th>
+    <th>Dob</th>
+    <th></th>
+  </tr>
+
+  <tr>
     <td><%= a_thing.id %></td>
     <td>
-      <img src="<%= a_thing.image %>">
+      <img src="<%= a_thing.image %>" style="width:250px;">
     </td>
     <td><%= a_thing.name %></td>
     <td><%= a_thing.dob %></td>
