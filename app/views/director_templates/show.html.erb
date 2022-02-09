@@ -59,6 +59,8 @@
   </dd>
 </dl>
 
+<hr>
+
 <h2>Filmography</h2>
 
 <table border="1">
@@ -78,7 +80,7 @@
     </td>
 
     <td>
-      <img src="<%= a_film.image %>" style="width:250px;">
+      <img src="https://robohash.org/<%= a_film.image %>" style="width:250px;">
     </td>
 
     <td>
@@ -95,7 +97,7 @@
     </td>
 
     <td>
-      <a href="">Show details</a>
+      <a href="/movies/<%= a_film.id %>">Show details</a>
     </td>
 
   </tr>
